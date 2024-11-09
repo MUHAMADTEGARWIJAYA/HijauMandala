@@ -7,7 +7,7 @@ function CartPage() {
       farm: "Peternakan Al-Amin",
       name: "Kambing Boer (Ukuran Sedang)",
       price: 3000000,
-      quantity: 2,
+      quantity: 1,
       image: "https://placekitten.com/200/200",
     },
     {
@@ -35,9 +35,14 @@ function CartPage() {
   };
 
   const decrementQuantity = (id) => {
-    setCartItems(cartItems.map(item =>
-      item.id === id && item.quantity > 1 ? { ...item, quantity: item.quantity - 1 } : item
-    ));
+    setCartItems(cartItems.map(item => {
+      if (item.id === id) {
+        return item.quantity > 1
+          ? { ...item, quantity: item.quantity - 1 }
+          : null;
+      }
+      return item;
+    }).filter(item => item !== null)); // Filter out items with quantity zero
   };
 
   const removeItem = (id) => {

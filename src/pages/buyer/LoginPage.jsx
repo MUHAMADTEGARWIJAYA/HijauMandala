@@ -46,16 +46,18 @@ const Login = () => {
                 </a>
               </div>
   
-              <button
-                type="submit"
-                className="w-full bg-green-800 text-white py-2 px-4 rounded-lg hover:bg-green-900 transition duration-300"
-              >
-                Masuk
-              </button>
+              <a href="/utama" className="w-full">
+                    <button
+                      type="button"
+                      className="w-full bg-green-800 text-white py-2 px-4 rounded-lg hover:bg-green-900 transition duration-300"
+                    >
+                      Masuk
+                    </button>
+               </a>
             </form>
   
             <p className="text-gray-600 mt-4 text-center">
-              Belum mempunyai akun? <a href="#" className="text-blue-600 hover:underline">Daftar</a>
+              Belum mempunyai akun? <a href="/singup" className="text-blue-600 hover:underline">Daftar</a>
             </p>
   
             <div className="flex items-center mt-4">
