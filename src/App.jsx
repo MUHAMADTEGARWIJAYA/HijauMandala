@@ -13,6 +13,7 @@ import Verifikasi from "./pages/seller/Verifikasi";
 
 import BelumBayar from "./pages/buyer/BelumBayar";
 import DetailPembayaran from "./pages/buyer/DetailPembayaran";
+import ProductDetailPage from "./pages/buyer/ProductDetailPage";
 
 function App() {
   return (
@@ -37,7 +38,8 @@ function App() {
         <Route path="/verifikasi" element={<Verifikasi />} />
         {/* <Route path="/side" element={<SidebarSeller />}/> */}
         <Route path="/detailpembayaran" element={<DetailPembayaran />} />
-        <Rute patah="/belumbayar" element={<BelumBayar />} />
+        <Route path="/belumbayar" element={<BelumBayar />} />
+        <Route path="/productdetailpage" element={<ProductDetailPage />} />
       </Route>
 
       <Route element={<HomeLayout />}>
