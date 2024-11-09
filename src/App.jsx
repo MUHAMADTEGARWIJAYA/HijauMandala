@@ -13,6 +13,7 @@ import Verifikasi from "./pages/seller/Verifikasi";
 
 import BelumBayar from "./pages/buyer/BelumBayar";
 import DetailPembayaran from "./pages/buyer/DetailPembayaran";
+import Pemesanan from "./pages/buyer/Pemesanan";
 import ProductDetailPage from "./pages/buyer/ProductDetailPage";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Route path="/detailpembayaran" element={<DetailPembayaran />} />
         <Route path="/belumbayar" element={<BelumBayar />} />
         <Route path="/productdetailpage" element={<ProductDetailPage />} />
+        <Route path="/pemesanan" element={<Pemesanan />} />
       </Route>
 
       <Route element={<HomeLayout />}>
