@@ -11,6 +11,7 @@ import Keranjang from "./pages/buyer/Keranjang";
 import PendaftaranToko from "./pages/seller/PendaftaranToko";
 import Verifikasi from "./pages/seller/Verifikasi";
 
+import AlamatSaya from "./pages/buyer/AlamatSaya";
 import BelumBayar from "./pages/buyer/BelumBayar";
 import DetailPembayaran from "./pages/buyer/DetailPembayaran";
 import Pemesanan from "./pages/buyer/Pemesanan";
@@ -42,6 +43,7 @@ function App() {
         <Route path="/belumbayar" element={<BelumBayar />} />
         <Route path="/productdetailpage" element={<ProductDetailPage />} />
         <Route path="/pemesanan" element={<Pemesanan />} />
+        <Route path="/alamatsaya" element={<AlamatSaya />} />
       </Route>
 
       <Route element={<HomeLayout />}>
