@@ -14,6 +14,7 @@ import Verifikasi from "./pages/seller/Verifikasi";
 import AkunSaya from "./pages/buyer/AkunSaya";
 import AlamatSaya from "./pages/buyer/AlamatSaya";
 import BelumBayar from "./pages/buyer/BelumBayar";
+import BerhasilBayar from "./pages/buyer/BerhasilBayar";
 import DetailPembayaran from "./pages/buyer/DetailPembayaran";
 import Pemesanan from "./pages/buyer/Pemesanan";
 import ProductDetailPage from "./pages/buyer/ProductDetailPage";
@@ -46,6 +47,7 @@ function App() {
         <Route path="/pemesanan" element={<Pemesanan />} />
         <Route path="/alamatsaya" element={<AlamatSaya />} />
         <Route path="/akunsaya" element={<AkunSaya />} />
+        <Route path="/berhasilbayar" element={<BerhasilBayar />} />
       </Route>
 
       <Route element={<HomeLayout />}>
