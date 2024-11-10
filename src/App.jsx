@@ -17,6 +17,7 @@ import BelumBayar from "./pages/buyer/BelumBayar";
 import BerhasilBayar from "./pages/buyer/BerhasilBayar";
 import DetailPembayaran from "./pages/buyer/DetailPembayaran";
 import Pemesanan from "./pages/buyer/Pemesanan";
+import PesananSaya from "./pages/buyer/PesananSaya";
 import ProductDetailPage from "./pages/buyer/ProductDetailPage";
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
         <Route path="/alamatsaya" element={<AlamatSaya />} />
         <Route path="/akunsaya" element={<AkunSaya />} />
         <Route path="/berhasilbayar" element={<BerhasilBayar />} />
+        <Route path="/pesanansaya" element={<PesananSaya />} />
       </Route>
 
       <Route element={<HomeLayout />}>
